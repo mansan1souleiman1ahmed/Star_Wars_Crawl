@@ -1,0 +1,49 @@
+body {
+    margin: 0%;
+    background-image: url("starsbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#divOne {
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    position: :relative;
+    top: 300px;
+}
+
+#divTwo {
+    transform: perspective(300px) rotateX(20deg) translateY(250%);
+    -webkit-transform: perspective(300px) rotateX(30deg) translateY(250%);
+    background-color: red;
+    width: 700px;
+    padding: 10px;
+    height: 700px;
+    margin: 0 auto;
+    font-size: 30px;
+    position: relative;
+    display: block;
+    -webkit-animation: mymove 72s linear infinite;
+    animation: mymove 72s linear infinite;
+}
+
+
+
+
+
+
+@keyframes mymove {
+    from {
+        transform: perspective(300px) rotateX(20deg) translateY(250%);
+        -webkit-transform: perspective(300px) rotateX(30deg) translateY(250%);
+
+    }
+
+    to {
+        transform: perspective(300px) rotateX(20deg) translateY(-250%);
+        -webkit-transform: perspective(300px) rotateX(30deg) translateY(-250%);
+    }
+}
